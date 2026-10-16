@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css?v=20260905a">
-  <link rel="stylesheet" href="mobile-fixes.css?v=20260906a">
+  <link rel="stylesheet" href="mobile-fixes.css?v=20261015a">
   <style>
     .hero-video{position:absolute;inset:0;overflow:hidden;background:#11100e}
     .hero-video iframe{position:absolute;top:50%;left:50%;width:177.78vh;height:56.25vw;min-width:100%;min-height:100%;border:0;pointer-events:none;transform:translate(-50%,-50%)}
@@ -220,9 +220,21 @@
             <p><small>Location</small>Houston, Texas Area</p>
             <p><small>Office Hours</small>Monday through Friday, 9 a.m. to 5 p.m.</p>
           </div>
-          <a class="button button-cream" href="tel:8328929392">Call to get started</a>
+          <a class="button button-cream" href="#request-care">Request care online</a>
+          <a class="button button-outline" href="tel:8328929392">Call to get started</a>
           <small>Please do not send medical records, diagnoses, Social Security numbers, or other sensitive health information by email.</small>
         </div>
+      </div>
+      <div class="shell request-care" id="request-care">
+        <div class="request-care-intro reveal">
+          <p class="kicker">Request care</p>
+          <h3>Tell us a little about who needs care.</h3>
+          <p>It takes about two minutes. We’ll reach out to go over details and availability. For faster help, call <a href="tel:8328929392">832-892-9392</a>.</p>
+        </div>
+        <div class="request-care-frame reveal">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfLLAzWOMJUGEfnLSa4UJI4fyeAswZISxjFPuU65JHcm36Gbw/viewform?embedded=true" title="Vero Home Care care request form" loading="lazy">Loading…</iframe>
+        </div>
+        <p class="request-care-fallback">Form not loading? <a href="https://docs.google.com/forms/d/e/1FAIpQLSfLLAzWOMJUGEfnLSa4UJI4fyeAswZISxjFPuU65JHcm36Gbw/viewform" target="_blank" rel="noopener">Open it in a new tab</a>.</p>
       </div>
     </section>
   </main>
