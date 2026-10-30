@@ -15,7 +15,8 @@ This is the website for **Vero Home Care LLC**, a non-medical home care agency i
 
 | | |
 |---|---|
-| Live site (today) | https://tammyamosley2018-hash.github.io/vero-home-care/ |
+| Live site (today) | https://lifechangingliving.github.io/vero-home-care/ |
+| GitHub repo | https://github.com/Lifechangingliving/vero-home-care (Markeisha's account) |
 | Future domain | https://infoverohomecare.com (owned at Namecheap, **not connected yet**, see "Domain" below) |
 | Hosting | GitHub Pages, served from the `main` branch, root folder |
 | Tech | Plain HTML + CSS + a small JavaScript file. No build step, no frameworks, no package installs. |
@@ -43,7 +44,7 @@ CLAUDE.md          This file
 | Header / nav | | Logo, links, "Start a conversation" button, mobile hamburger menu |
 | Hero | `#home` | Full-screen looping video (Streamable `xfst18`, muted, no controls) with headline "More support. More life at home." |
 | Credentials bar | | Personal / Reliable / Dignified / Houston |
-| Mission | `#about` | Mission statement, values chips, caregiver photo |
+| Mission | `#about` | "Our promise" quote (Your Care. Your Comfort. Your Home.), mission statement, values chips (Compassion, Integrity, Excellence), caregiver photo |
 | Services | `#services` | Personal Care, Companionship, Household Support, Family Relief |
 | Approach | `#approach` | "The Vero difference" principles |
 | Who we serve | `#who-we-serve` | Audience copy, tags, bedside photo |
@@ -113,7 +114,7 @@ If something breaks after a push, undo it safely with `git revert HEAD` then `gi
 - The domain is registered at **Namecheap** and uses Namecheap's default DNS (`dns1/dns2.registrar-servers.com`).
 - It currently has **no website records**, so typing infoverohomecare.com does not load the site. It **does** have Google Workspace email records (MX `smtp.google.com` and a `google-site-verification` TXT). **Never delete those**, or her email stops working.
 - The pages' canonical and social tags already use `https://infoverohomecare.com/`.
-- Plan: move this repo to Markeisha's own GitHub account first, then connect the domain.
+- The repo is now in Markeisha's GitHub account (`Lifechangingliving`), so the domain can be connected whenever she is ready.
 
 **Steps to connect (when ready):**
 1. In Namecheap → Domain List → Manage → Advanced DNS, add:
@@ -121,23 +122,21 @@ If something breaks after a push, undo it safely with `git revert HEAD` then `gi
    - A record, Host `@`, Value `185.199.109.153`
    - A record, Host `@`, Value `185.199.110.153`
    - A record, Host `@`, Value `185.199.111.153`
-   - CNAME record, Host `www`, Value `<her-github-username>.github.io.`
+   - CNAME record, Host `www`, Value `lifechangingliving.github.io.`
    - Remove any Namecheap "parking" or URL redirect records for `@` and `www`. Leave MX and TXT records alone.
 2. In the repo, create a file named `CNAME` (no extension) containing exactly `infoverohomecare.com`, commit and push. (Or set Custom domain in GitHub → repo Settings → Pages.)
 3. Wait for DNS (minutes to a few hours). Check with `dig +short infoverohomecare.com`.
 4. In GitHub → Settings → Pages, turn on **Enforce HTTPS** once the certificate is ready.
 5. Update the "Live site" row at the top of this file.
 
-## Moving the repo to Markeisha's GitHub
+## Staff policy signatures
 
-Currently at `github.com/tammyamosley2018-hash/vero-home-care` (Tammy's account). After transfer (GitHub → Settings → Transfer ownership, or a fresh push to a new repo in her account):
-- Run `git remote set-url origin https://github.com/<her-username>/vero-home-care.git`.
-- Turn on GitHub Pages in the new repo: Settings → Pages → Deploy from branch → `main` / root.
-- The github.io address will change to `https://<her-username>.github.io/vero-home-care/`. Update the "Live site" row above.
+Employee policies (handbook, training policies, on-call policy, and others) are signed with **Google Workspace eSignature** in Google Docs, not through this website. Signed copies live in Markeisha's Google Drive. Do not build a staff portal or signature form on this site unless she asks for one.
 
 ## History notes
 
 - Launched as a client preview 2026-08-25. Positioning corrected to non-medical care 2026-08-31.
 - Hero video, editorial photos, standards section (privacy, caregiver standards, payment), and mobile menu fixes added through 2026-09-06.
 - Care request Google Form embedded in the Contact section 2026-10-15.
+- Repo moved to Markeisha's GitHub (`Lifechangingliving`) and new mission statement + promise added 2026-10-29. Use her mission wording exactly as written.
 - Built with help from Tammy Mosley, who set up this project and Claude Code for Markeisha.
